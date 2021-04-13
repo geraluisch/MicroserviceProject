@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/geraluisch/curso-microservicios-config-files
+          search-paths:          - micro-eureka
+          - micro-nutricionista
+          - micro-paciente
+          - micro-zuul                                  
+  application:    name: config
+  #profiles:
+    #active: native
+  
+            
+server:  port: 4444    
